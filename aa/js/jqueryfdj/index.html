@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery放大镜插件效果</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="./js/jQuery-imgzoom.js"></script>
+    <style>
+        #small{
+            width: 250px;
+            height: 365px;
+            border: 1px solid #000;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            /* float: left; */
+        }
+        #small img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+	<h3 style="padding-left: 100px">jQuery放大镜插件效果</h3>
+    <div id="small" style="width: 250px; height: 365px;">
+        <img src="img/1.jpg">     
+    </div>
+
+</body>
+    <script>
+        $("#small").imgzoom({times:"1"})
+    </script>
+</html>
